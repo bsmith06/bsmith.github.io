@@ -46,9 +46,14 @@ populateTable()
 books.forEach((booklibrary) => {
     const bookSelect = document.getElementById('bookSelect');
     const bookSelect2 = document.getElementById('bookSelect2');
-    const option = document.createElement('option');
-    option.value = booklibrary.isbn;
-    option.textContent = booklibrary.name;
-    bookSelect.appendChild(option);
-    bookSelect2.appendChild(option);
+
+    const option1 = document.createElement('option');
+    option1.value = booklibrary.isbn;
+    option1.textContent = booklibrary.name;
+    bookSelect.appendChild(option1);
+
+    const option2 = document.createElement('option');
+    option2.value = booklibrary.isbn;
+    option2.textContent = booklibrary.name;
+    bookSelect2.appendChild(option2);
 });
