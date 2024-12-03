@@ -27,3 +27,21 @@ td:nth-child(odd){
     font-size:larger; 
     color: teal;
 }
+
+#Books{
+    background-color:white;
+}
+#cart > label{
+    font-size: x-large;
+    color: darkgreen;
+    padding: 1rem;
+}
+#cart > input, select{
+    font-size: larger;
+    color: darkblue;
+    text-align: center;
+    margin: 10px;
+}
+#cart_body{
+    background-color: black;
+}
