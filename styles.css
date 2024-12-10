@@ -1,10 +1,23 @@
+html,body{
+    margin: 0;
+}
 #home{
-    background-image: url("../books/assets/background.png"); 
+    background-image: url("assets/background.png"); 
     background-repeat: no-repeat; 
     background-size: cover;
 }
 nav{
     text-align: center;
+}
+.nav_Bar{
+    font-size:x-large;
+    width: 100%;
+    background-color: black;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; 
 }
 #books > a {
     margin: 2rem;
@@ -44,4 +57,21 @@ td:nth-child(odd){
 }
 #cart_body{
     background-color: black;
+}
+#home>main{
+    padding: 5rem;
+    margin: 10rem;
+    border-radius: 4rem;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black; font-weight: bold;
+    background-color: gray;
+}
+footer{
+    text-align: center; 
+    font-size: xx-large; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: wheat; 
+    font-weight: bold;
 }
