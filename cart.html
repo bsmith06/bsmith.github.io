@@ -30,12 +30,28 @@
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" required>
         <br>
-        <label for="email">email:</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
-        <input type="button" value="submit">
+        <label for="street adress">Street Adress</label>
+        <input type="adress" id="adress" name="adress" required>    
+        <br>
+        <label for="city">City</label>
+        <input type="city" id="city" name="city" required>    
+        <br>
+        <label for="state">State</label>
+        <input type="state" id="state" name="state" required>    
+        <br>
+        <label for="sip code">Zip Code</label>
+        <input type="sip code" id="sip code" name="sip code" required>    
+        <br>
+        <input type="button" value="submit" onclick="showConfirmation()">
         <input type="button" value="clear">
     </form>
+    <div id="confirmationPage" style="display: none;">
+        <h1>Confirmation Page</h1>
+        <ul id="confirmationList"></ul>
+    </div>
     <a id="email" href="mailto:beckettjobssmith@icloud.com">email me here</a>
     <script type ="module" src="scripts/script.js"></script>
 </body>
