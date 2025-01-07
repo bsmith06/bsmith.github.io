@@ -57,32 +57,4 @@ books.forEach((booklibrary) => {
     option2.textContent = booklibrary.name;
     bookSelect2.appendChild(option2);
 });
-function showConfirmation() {
-    const name = document.getElementById('name').value; 
-    const fname = document.getElementById('fname').value;
-    const lname = document.getElementById('lname').value;
-    const email = document.getElementById('email').value;
-    const adress = document.getElementById('adress').value;
-    const city = document.getElementById('city').value;
-    const state = document.getElementById('state').value;
-    const sip_code = document.getElementById('sip code').value;
 
-    if (name && fname && lname && email && adress && city && state && sip_code){
-        document.getElementById('cart').style.display = 'none';
-
-        const cart = document.getElementById('cart')
-        cart.innerHTML = `
-        <liv><strong>Name:</strong> ${name}</liv>
-        <liv><strong>Name:</strong> ${fname}</liv>
-        <liv><strong>Name:</strong> ${lname}</liv>
-        <liv><strong>Name:</strong> ${email}</liv>
-        <liv><strong>Name:</strong> ${adress}</liv>
-        <liv><strong>Name:</strong> ${city}</liv>
-        <liv><strong>Name:</strong> ${state}</liv>
-        <liv><strong>Name:</strong> ${sip_code}</liv>
-        `;
-        document.getElementById('cart').style.display = 'block';
-    }
-}
-
-showConfirmation() 
