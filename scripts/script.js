@@ -68,6 +68,8 @@ function showConfirmation() {
     const sip_code = document.getElementById('sip code').value;
 
     if (name && fname && lname && email && adress && city && state && sip_code){
-        document.getElementById('cart').style.display = 'none'
+        document.getElementById('cart').style.display = 'none';
+
+        
     }
 }
