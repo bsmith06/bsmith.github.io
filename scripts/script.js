@@ -70,6 +70,19 @@ function showConfirmation() {
     if (name && fname && lname && email && adress && city && state && sip_code){
         document.getElementById('cart').style.display = 'none';
 
-        
+        const cart = document.getElementById('cart')
+        cart.innerHTML = `
+        <liv><strong>Name:</strong> ${name}</liv>
+        <liv><strong>Name:</strong> ${fname}</liv>
+        <liv><strong>Name:</strong> ${lname}</liv>
+        <liv><strong>Name:</strong> ${email}</liv>
+        <liv><strong>Name:</strong> ${adress}</liv>
+        <liv><strong>Name:</strong> ${city}</liv>
+        <liv><strong>Name:</strong> ${state}</liv>
+        <liv><strong>Name:</strong> ${sip_code}</liv>
+        `;
+        document.getElementById('cart').style.display = 'block';
     }
 }
+
+showConfirmation() 
