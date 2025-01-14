@@ -25,4 +25,3 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         alert('Please fill out all fields');
     }
 });
-

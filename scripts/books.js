@@ -89,5 +89,17 @@ export const booklibrary = [
             "author": "Nick Eliopulosy",
             "isbn": " 978-1984850515",
             "description": "The adventures continue in the third official Minecraft chapter book based on one of the most popular video games of all time. As Ash, Morgan, and three of their fellow Minecraft players, who can actually enter the game, take a deep dive into the Aquatic biome, they find a world filled with beauty and wonder. A treasure map promises adventure and the opportunity to explore--but it could also be a trap set by the mysterious Evoker King. With air running low, will they survive to find out?"
+        },
+        {
+            "name": "Minecraft Woodsword Chronicles Book 4",
+            "author": "Nick Eliopulosy",
+            "isbn": "978-1984850621",
+            "description": "The adventures continue in the fourth Minecraft chapter book based on one of the most popular video games of all time. Jodi, Ash, Morgan and their fellow Minecraft players go out into the real world to find clues to the identity of the mysterious and sinister Evoker King. Not only do they need to find out who or he is, but they need to know if it\'s really possible for him to escape the game! Because if he can, that could spell big trouble both in the game and out!",
+        },
+        {
+            "name": "Minecraft Woodsword Chronicles Book 5",
+            "author": "Nick Eliopulosy",
+            "isbn": "978-1984850621",
+            "description": "The adventures continue in the fifth official Minecraft chapter book based on the most popular video games of all time. When Po, Morgan, and three of their fellow Minecraft players track the Evoker King to his home in the heart of a perilous dungeon, they have to gear up for an epic fantasy quest filled with danger, dragons, and hostile mobs. Meanwhile, in the real world, the school play seems to be full of its own traps and troubles. Are Po and his friends doomed in both worlds?!",
         }
     ]
