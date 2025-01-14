@@ -13,13 +13,13 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         const confirmationPage = document.getElementById('confirmationPage')
         confirmationPage.innerHTML = `
         <ul id="conf">
-            <li><strong>Name:</strong> ${fname}</li>
-            <li><strong>Name:</strong> ${lname}</li>
-            <li><strong>Name:</strong> ${email}</li>
-            <li><strong>Name:</strong> ${adress}</li>
-            <li><strong>Name:</strong> ${city}</li>
-            <li><strong>Name:</strong> ${state}</li>
-            <li><strong>Name:</strong> ${sip_code}</li>
+            <li><strong>First Name:</strong> ${fname}</li>
+            <li><strong>Last Name:</strong> ${lname}</li>
+            <li><strong>Email:</strong> ${email}</li>
+            <li><strong>Adress:</strong> ${adress}</li>
+            <li><strong>City:</strong> ${city}</li>
+            <li><strong>State:</strong> ${state}</li>
+            <li><strong>Zip_Code:</strong> ${sip_code}</li>
         </ul>
         `;
         document.getElementById('confirmationPage').style.display = 'block';

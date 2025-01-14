@@ -6,10 +6,10 @@ html,body{
     background-repeat: no-repeat; 
     background-size: cover;
 }
-nav{
-    text-align: center;
-}
+
 .nav_Bar{
+    text-align: center;
+    text-decoration: none;
     font-size:x-large;
     width: 100%;
     background-color: black;
@@ -58,6 +58,11 @@ td:nth-child(odd){
 #cart_body{
     background-color: black;
 }
+#cart_body>h1{
+    color: gold;
+    font-size: xxx-large;
+    line-height: 0;
+}
 #home>main{
     padding: 5rem;
     margin: 10rem;
@@ -76,6 +81,8 @@ footer{
     font-weight: bold;
 }
 
-#conf ul{
+#conf {
     color: aliceblue;
+    list-style-type: none;
+    font-size: x-large;
 }
