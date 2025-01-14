@@ -12,7 +12,8 @@ async function fetchBooks() {
 }
 
 async function populateTable() {
-    const tableBody = document.querySelector('#bookTable');
+    const tableBody = document.querySelector('#bookTable tbody');
+    const books = await fetchBooks();
     
     if (books) {
         books.forEach(book => {
@@ -38,10 +39,8 @@ async function populateTable() {
         });
     }
 }
-populateTable()
 
-
-
+populateTable();
 
 books.forEach((booklibrary) => {
     const bookSelect = document.getElementById('bookSelect');
