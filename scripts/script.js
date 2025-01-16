@@ -1,11 +1,8 @@
 import { booklibrary } from "./books.js";
-const books = booklibrary;
 
 async function fetchBooks() {
     try {
-        const response = await fetch('./books.js');
-        const data = await response.json();
-        return data.books;
+        return booklibrary;
     } catch (error) {
         console.error('Error fetching the books:', error);
     }
@@ -13,6 +10,11 @@ async function fetchBooks() {
 
 async function populateTable() {
     const tableBody = document.querySelector('#bookTable tbody');
+    if (!tableBody) {
+        console.error('Table body not found');
+        return;
+    }
+    
     const books = await fetchBooks();
     
     if (books) {
@@ -41,19 +43,3 @@ async function populateTable() {
 }
 
 populateTable();
-
-books.forEach((booklibrary) => {
-    const bookSelect = document.getElementById('bookSelect');
-    const bookSelect2 = document.getElementById('bookSelect2');
-
-    const option1 = document.createElement('option');
-    option1.value = booklibrary.isbn;
-    option1.textContent = booklibrary.name;
-    bookSelect.appendChild(option1);
-
-    const option2 = document.createElement('option');
-    option2.value = booklibrary.isbn;
-    option2.textContent = booklibrary.name;
-    bookSelect2.appendChild(option2);
-});
-
