@@ -42,4 +42,26 @@ async function populateTable() {
     }
 }
 
+async function populateSelectOptions() {
+    const bookSelect1 = document.getElementById('bookSelect');
+    const bookSelect2 = document.getElementById('bookSelect2');
+    
+    const books = await fetchBooks();
+    
+    if (books) {
+        books.forEach(book => {
+            const option1 = document.createElement('option');
+            option1.value = book.isbn;
+            option1.textContent = book.name;
+            bookSelect1.appendChild(option1);
+            
+            const option2 = document.createElement('option');
+            option2.value = book.isbn;
+            option2.textContent = book.name;
+            bookSelect2.appendChild(option2);
+        });
+    }
+}
+
 populateTable();
+populateSelectOptions();
